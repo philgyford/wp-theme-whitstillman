@@ -33,8 +33,9 @@ add_action( 'wp_enqueue_scripts', 'whitstillman_deregister_fonts', 100 );
  * If the big image is 'damsels1.jpg' the thumbnail is 'damsels1-thumbnail.jpg'
  */
 function whitstillman_get_headers() {
+	// One array per film/show/book/etc.
 	return array(
-		// One array per film/show/book/etc.
+		// BARCELONA.
 		array(
 			// An array of lowercased tags that we'll try and match to the 
 			// page/post. If one of them does, we use an image from this set.
@@ -47,11 +48,19 @@ function whitstillman_get_headers() {
 			// a 'barcelona1.jpg' image available.
 			'images'		=> array('barcelona1'),	
 		),
+		// DAMSELS IN DISTRESS.
 		array(
 			'tags'			=> array('damsels in distress'),
 			'title_words'	=> array('damsels'),
 			'images'		=> array('damsels1'),
 		),
+		// LAST DAYS OF DISCO.
+		array(
+			'tags'			=> array('the last days of disco', 'last days of disco'),
+			'title_words'	=> array('disco'),
+			'images'		=> array('disco1'),
+		),
+		// METROPOLITAN.
 		array(
 			'tags'			=> array('metropolitan'),
 			'title_words'	=> array('metropolitan'),
