@@ -53,6 +53,11 @@ function whitstillman_add_headers () {
 			'thumbnail_url' => '%2$s/images/headers/damsels1-thumbnail.jpg',
 			'description' => __( 'Damsels 1', 'twentythirteen' )
 		),
+		'barcelona1' => array(
+			'url' => '%2$s/images/headers/barcelona1.jpg',
+			'thumbnail_url' => '%2$s/images/headers/barcelona1-thumbnail.jpg',
+			'description' => __( 'Barcelona 1', 'twentythirteen' )
+		),
 	)); // end of array
 } // end of main function
 add_action ('after_setup_theme', 'whitstillman_add_headers');
