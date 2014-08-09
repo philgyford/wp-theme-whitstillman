@@ -1,0 +1,257 @@
+/*
+Theme Name: Whit Stillman
+Theme URI: http://www.whitstillman.org/
+Author: Phil Gyford
+Author URI: http://www.gyford.com/
+Description: A child theme of Twenty Thirteen.
+Version: 1.0
+Template: twentythirteen
+*/
+
+@import url("../twentythirteen/style.css");
+
+/****************************************************************************
+ * Replace twentythirteen's Google fonts.
+ */
+h1,
+h2,
+h3,
+.site-description,
+.widget .widget-title,
+.comment-reply-title {
+	font-family: RomanShaD, Times, "Times New Roman", serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.1em;
+	letter-spacing: 0.03em;
+	word-spacing: 0.1em;
+}
+html,
+button,
+input,
+select,
+textarea,
+.format-link .entry-title,
+.attachment .entry-title,
+.author-description .author-title, 
+.archive-title,
+.archive-meta,
+.page-title,
+.comments-title,
+h4,
+h5,
+h6 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: normal;
+	letter-spacing: 0;
+}
+
+@media (max-width: 643px) {
+	.menu-toggle {
+		font-family: Helvetica, Arial, sans-serif;
+	}
+}
+
+
+/****************************************************************************
+ * Header
+ */
+
+
+.site-header {
+	background: none;
+}
+.site-title {
+	font-size: 90px;
+	margin-bottom: 0;
+	font-weight: normal;
+	padding-bottom: 0;
+	letter-spacing: 0.05em;
+}
+/* Fix that "Wh" kerning. */
+.site-title::first-letter {
+	letter-spacing: 0.005em;
+}
+.site-description {
+	font-weight: normal;
+	font-size: 30px;
+	margin-left: 0.5em;
+}
+.home .site-header a.home-link:hover,
+.home .site-header .site-title:hover,
+.home .site-header .site-description:hover {
+	text-decoration: none;
+	cursor: default;
+}
+
+
+/****************************************************************************
+ * Main nav.
+ */
+
+.nav-menu li a {
+	color: #bc360a;
+}
+ul.nav-menu ul a,
+.nav-menu ul ul a {
+	width: 250px;
+	color: #bc360a;
+}
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+	font-style: normal;
+	color: #141412;
+}
+.nav-menu ul .current_page_item > a,
+.nav-menu ul .current_page_ancestor > a,
+.nav-menu ul .current-menu-item > a,
+.nav-menu ul .current-menu-ancestor > a {
+	color: #fff;
+}
+
+/****************************************************************************
+ * Headings etc.
+ */
+
+.entry-header {
+	margin-bottom: 10px;
+}
+.entry-thumbnail {
+	margin-bottom: 25px;
+}
+.comment-reply-title,
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 30px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 26px;
+	margin-top: 38px;
+	margin-bottom: 10px;
+}
+h4 {
+	font-size: 16px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h5, h6 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: ;
+}
+
+/****************************************************************************
+ * Misc
+ */
+
+div.scrippet {
+	width: 95% ! important;
+}
+/* Stop hovered links being orange. */
+.entry-content a:hover,
+.comment-content a:hover,
+.navigation a:hover,
+.comment-meta a:hover,
+.widget a:hover,
+a:active,
+a:hover {
+	color: #bc360a;
+}
+.entry-title a:hover {
+	color: #141412;
+}
+.site-footer .widget a:hover {
+	color: #e6402a;
+}
+
+.navigation a:hover {
+	text-decoration: underline;
+}
+.navbar .navigation a:hover,
+.image-navigation a:hover {
+	text-decoration: none;
+}
+
+.widget .widget-title {
+	font-size: 30px;
+}
+
+.wp-caption .wp-caption-text,
+.entry-caption,
+.gallery-caption {
+	font-style: normal;
+	font-size: 14px;
+}
+.paging-navigation a {
+	font-style: normal;
+}
+.no-comments {
+	font-style: normal;
+}
+.comments-title {
+	font-size: 24px;
+	line-height: 1.5em;
+}
+.post-navigation {
+	font-size: 16px;
+}
+.entry-content blockquote {
+	font-size: 16px;
+}
+
+/****************************************************************************
+ * Variations for smaller widths.
+ */
+
+@media (max-width: 600px) {
+	.site-description {
+		font-size: 24px;
+		margin-left: 0.7em;
+	}
+}
+@media (max-width: 530px) {
+	.site-title {
+		font-size: 70px;
+	}
+	.site-description {
+		font-size: 19px;
+	}
+}
+@media (max-width: 420px) {
+	.site-title {
+		font-size: 50px;
+	}
+	.site-description {
+		margin-left: 0.5em;
+	}
+}
+
+
+
+@media (max-width: 643px) {
+	.entry-title,
+	.format-chat .entry-title,
+	.format-image .entry-title,
+	.format-gallery .entry-title,
+	.format-video .entry-title {
+		font-size: 48px;
+		font-weight: normal;
+	}
+}
+@media (max-width: 479px) {
+	.entry-title,
+	.format-chat .entry-title,
+	.format-image .entry-title,
+	.format-gallery .entry-title,
+	.format-video .entry-title {
+		font-size: 36px;
+		font-weight: normal;
+	}
+}
