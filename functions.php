@@ -9,6 +9,32 @@
 
 /* This is loaded BEFORE the parent's functions.php. */
 
+/**
+ * We don't use theme thumbnails.
+ */
+function whitstillman_setup() {
+	remove_theme_support('post-thumbnails');
+}
+add_action( 'after_setup_theme', 'whitstillman_setup', 100 );
+
+/**
+ * Description: Custom function to prevent post thumbnails from loading on
+ * search, category, and archive pages.
+ * @param string|array $metadata - Always null for post metadata.
+ * @param int $object_id - Post ID for post metadata
+ * @param string $meta_key - metadata key.
+ * @param bool $single - Indicates if processing only a single $metadata value or array of values.
+ * @return Original or Modified $metadata.
+ */
+function remove_post_thumbnail($metadata, $object_id, $meta_key, $single){
+
+	// Return false if the current filter is that of a post thumbnail.
+	// Otherwise, return the original $content value.
+	return ( isset($meta_key) && '_thumbnail_id' === $meta_key ) ? false : $metadata;
+}
+add_filter('get_post_metadata', 'remove_post_thumbnail', true, 4);
+
+
 function whitstillman_load_scripts() {
 	wp_enqueue_script('whitstillman-script-fonts', get_stylesheet_directory_uri().'/js/fonts.js');
 }
