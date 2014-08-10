@@ -299,7 +299,11 @@ footer.entry-meta > span:first-child {
 	}
 }
 
-
+@media (max-width: 999px) {
+	.site-header {
+		background-image: none ! important;
+	}
+}
 
 @media (max-width: 643px) {
 	.entry-title,

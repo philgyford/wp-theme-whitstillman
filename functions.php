@@ -99,7 +99,8 @@ function whitstillman_get_headers() {
 		array(
 			'tags'			=> array('metropolitan'),
 			'title_words'	=> array('metropolitan'),
-			'images'		=> array('metropolitan1', 'metropolitan2'),
+			//'images'		=> array('metropolitan1', 'metropolitan2', 'metropolitan3'),
+			'images'		=> array('metropolitan3'),
 		),
 	);
 };
