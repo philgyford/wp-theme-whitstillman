@@ -206,6 +206,18 @@ a:hover {
 	font-size: 16px;
 }
 
+/* Remove the icons before entry meta stuff. */
+.featured-post:before,
+.entry-meta .date a:before,
+.comments-link a:before,
+.entry-meta .author a:before,
+.categories-links a:first-child:before,
+.tags-links a:first-child:before,
+.edit-link a:before {
+	content: '';
+}
+
+
 /****************************************************************************
  * Variations for smaller widths.
  */
