@@ -35,6 +35,9 @@ function remove_post_thumbnail($metadata, $object_id, $meta_key, $single){
 add_filter('get_post_metadata', 'remove_post_thumbnail', true, 4);
 
 
+/**
+ * Add the font JavaScript for the title fonts.
+ */
 function whitstillman_load_scripts() {
 	wp_enqueue_script('whitstillman-script-fonts', get_stylesheet_directory_uri().'/js/fonts.js');
 }
