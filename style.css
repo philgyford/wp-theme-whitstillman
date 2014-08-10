@@ -118,6 +118,9 @@ ul.nav-menu ul a,
 .entry-header {
 	margin-bottom: 10px;
 }
+.page .entry-header {
+	margin-bottom: 2em;
+}
 .entry-thumbnail {
 	margin-bottom: 25px;
 }
@@ -215,6 +218,57 @@ a:hover {
 .tags-links a:first-child:before,
 .edit-link a:before {
 	content: '';
+}
+
+/****************************************************************************
+ * Replace dotted line rule.
+ */
+
+hr,
+.format-audio .audio-content,
+.format-status .entry-content:before,
+.format-status .entry-meta:before,
+.comment-list > li:after,
+.comment-list .children > li:before {
+	background-image: url(images/solid-line.png);
+}
+
+/* Add rule to entry-meta blocks. */
+.entry-meta {
+	background: url(images/solid-line.png) repeat-x left bottom;
+	padding-bottom: 0.7em;
+	margin-bottom: 1em;
+}
+.sidebar .entry-header .entry-meta {
+	padding-bottom: 0.7em;
+}
+footer.entry-meta {
+	background: none;
+}
+footer.entry-meta > div:first-child,
+footer.entry-meta > span:first-child {
+	background: url(images/solid-line.png) repeat-x left top;
+	padding-top: 0.5em;
+}
+
+@media print,
+	(-o-min-device-pixel-ratio: 5/4),
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 120dpi) {
+
+	.format-audio .audio-content,
+	.format-status .entry-content:before,
+	.format-status .entry-meta:before,
+	.comment-list > li:after,
+	.comment-list .children > li:before {
+		background-image: url(images/solid-line-2x.png);
+	}
+
+	.entry-meta,
+	footer.entry-meta > div:first-child,
+	footer.entry-meta > span:first-child {
+		background-image: url(images/solid-line-2x.png);
+	}
 }
 
 
