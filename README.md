@@ -1,8 +1,10 @@
 # WordPress Whit Stillman theme
 
-This is a WordPress theme used on [WhitStillman.org](http://www.whitstillman.org). 
+This is the WordPress theme used on [WhitStillman.org](http://www.whitstillman.org). 
 
 It is a child theme of the standard Twenty Thirteen WP theme.
+
+These files should be in a directory in `wp-content/themes/`. There *must* also be the `wp-content/themes/twentythirteen/` directory present.
 
 ## Notes
 
