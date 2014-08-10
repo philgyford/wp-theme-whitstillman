@@ -77,6 +77,12 @@ function whitstillman_get_headers() {
 			// a 'barcelona1.jpg' image available.
 			'images'		=> array('barcelona1'),	
 		),
+		// COSMOPOLITANS
+		array(
+			'tags'			=> array('cosmopolitans', 'the cosmopolitans'),
+			'title_words'	=> array('cosmopolitans'),
+			'images'		=> array('cosmopolitans1'),
+		),
 		// DAMSELS IN DISTRESS.
 		array(
 			'tags'			=> array('damsels in distress'),
